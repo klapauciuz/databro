@@ -25,9 +25,9 @@ def upload_file():
         file.save(filepath)
         data = pd.read_csv(filepath)
         # Process the CSV data as needed
-        return f"File {file.filename} uploaded successfully!"
+        return 'file {} uploaded successfully'.format(file.filename)
     else:
-        return "Invalid file format. Please upload a CSV file."
+        return 'invalid file format. please upload a CSV file.'
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
