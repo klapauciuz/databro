@@ -26,34 +26,69 @@
         .form-check {
             margin-bottom: 10px;
         }
+        ul, li {
+            list-style-type: none;
+        }
+        ul {
+            margin-top: 5px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Your bro in the world of data 🙌</h1>
+        <h1 class="display-3">Your bro in the world of data 🙌</h1>
+        <h3 class="display-6 blockquote text-center text-muted">Your lists looks like a mess, extract something useful from it <sup> (without Excel 🤓 )</sup></h3>
         <form action="/start" method="post" enctype="multipart/form-data">
             <div class="mb-3 w-50">
                 <label for="csvFile" class="form-label">Select CSV File(or drop it here)</label>
                 <input type="file" class="form-control" id="csvFile" name="file" accept=".csv" required>
             </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="emailSearch" name="options" value="email">
-                <label class="form-check-label" for="emailSearch">
-                    Find emails
-                </label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="phoneSearch" name="options" value="phone" disabled>
-                <label class="form-check-label" for="phoneSearch">
-                    Find phone numbers
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="otherOptions" name="uniq" value="other">
-                <label class="form-check-label" for="otherOptions">
-                    Only unique values
-                </label>
-            </div>
+            Search for...
+            <ul>
+                <li>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="emailSearch" name="options" value="email">
+                        <label class="form-check-label" for="emailSearch">
+                            Email addresses
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="phoneSearch" name="options" value="phone" disabled>
+                        <label class="form-check-label" for="phoneSearch">
+                            Phone numbers
+                        </label>
+                    </div>
+                </li>
+            </ul>
+            Social media links, URLs, etc.
+            <ul>
+                <li>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="otherOptions" name="uniq" value="other">
+                        <label class="form-check-label" for="otherOptions">
+                            Instagram
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="otherOptions" name="uniq" value="other">
+                        <label class="form-check-label" for="otherOptions">
+                            LinkedIn
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="otherOptions" name="uniq" value="other">
+                        <label class="form-check-label" for="otherOptions">
+                            X.com
+                        </label>
+                    </div>
+                </li>
+            </ul>
             <button type="submit" class="btn btn-primary mt-3">Submit</button>
         </form>
     </div>
