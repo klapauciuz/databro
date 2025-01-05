@@ -1,3 +1,3 @@
 coming soon 🫡
 
-<img width="1361" alt="Снимок экрана 2025-01-03 в 14 08 19" src="https://github.com/user-attachments/assets/0291dff7-27f5-4bae-930d-9e57f8813470" />
+<img width="1369" alt="Снимок экрана 2025-01-05 в 22 08 42" src="https://github.com/user-attachments/assets/36dc8129-773d-4984-a6c8-8aa5c431381a" />
